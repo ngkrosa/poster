@@ -1,0 +1,226 @@
+/*border-radius: % to create ellipse*/
+/*#circle1{
+	width: 100px;
+	height: 100px;
+	border-radius:50%;
+	background: teal;
+	opacity: .25;
+	transition: width 5s;
+	transition-timing-function: linear;
+	margin-bottom: 10px;
+	display:block;
+	box-shadow: 50px 50px blue;
+	opacity: .25;
+
+}
+
+#circle1:hover{
+	width:150%;*/
+
+/*}*/
+/*.header{
+	display:block;
+	height:100%;
+}
+
+.header-box{
+	width: 100%;
+	padding-top:50px;
+	padding-left:50px;
+	height:100%;
+	background-color: green;
+	display: inline-flex;
+	margin: 100px 100px;
+	justify-content: space-around;
+}
+
+
+.design-container{
+	display: block;
+	height: 85%;
+}
+*/
+
+
+
+@keyframes colorchange {
+	0%{background-color: Cornsilk}
+	10%{background-color: BlanchedAlmond}
+	20%{background-color: Bisque}
+	30%{background-color: NavajoWhite}
+	40%{background-color: Wheat}
+	50%{background-color: BurlyWood}
+	60%{background-color: Tan}
+	70%{background-color: Wheat}
+	80%{background-color: RosyBrown}
+	90%{background-color: SandyBrown}
+	100%{background-color: Goldenrod}
+}
+
+body{ 
+	background-repeat: no-repeat;
+	background-color: Cornsilk;
+	background-size: 800px 800px;
+	animation-name: colorchange;
+	animation-duration: 20s ;
+	animation-direction:alternate-reverse;
+	animation-iteration-count: infinite;
+}
+
+#circle1{
+	width:600px;
+	height:600px;
+	border-radius: 50%;
+	display:inline-block;
+	background-color:blue;
+	opacity:0.5;
+	margin-left: 100px;
+	box-shadow:200px 500px white;
+}
+
+#circle1:hover{
+	transform:rotate(270deg);
+}
+/*#circle-rotate{
+	width:450px;
+	height:450px;
+	border-radius:50%;
+	background-color:blue;
+	opacity:0.25;
+	margin: -100px;
+	display:inline-block;
+	float:center;
+	box-shadow: 100px 100px white;
+
+
+}
+
+#circle-rotate:hover{
+	transform:rotate(270deg);*/
+
+
+@keyframes example1 {
+	0%{background-color: blue; left:0px; top:0px;}
+	25%{background-color: purple left:200px; top:0px;transform:rotate(90deg);}
+	50%{background-color: fushsia; left:200px; top:200px;transform:rotate(180deg);}
+	75%{background-color: aqua; left:0px; top:200px;transform:rotate(270deg);}
+	100%{background-color: teal; left:0px;top:0px;transform:rotate(360deg);}
+}
+
+#circle-rotate1 {
+	width:300px;
+	height:300px;
+	border-radius:50%;
+	background-color:yellow;
+	opacity:0.75;
+	margin-bottom: 10px;
+	display:inline-block;
+	float:right;
+	box-shadow: 100px 100px teal;
+	animation-name: example1 ;
+	animation-duration: 4s;
+	animation-iteration-count:infinite;
+
+}
+
+@keyframes example {
+	0%{background-color: teal; left:0px; top:0px;}
+	25%{background-color: aqua left:200px; top:0px;transform:rotate(90deg);}
+	50%{background-color: fushsia; left:200px; top:200px;transform:rotate(180deg);}
+	75%{background-color: purple; left:0px; top:200px;transform:rotate(270deg);}
+	100%{background-color: blue; left:0px;top:0px;transform:rotate(360deg);}
+}
+
+#rect{
+	width: 200px;
+	height:200px;
+	background-color: purple;
+	box-shadow: 500px 500px teal;
+	opacity: .25;
+	position: relative;
+	margin-bottom: 100px;
+	animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+
+
+@keyframes rect-animation {
+	0%{transform:scale(1,2)}
+	5%{transform:scale(2,4)}
+	10%{transform:scale(4,6)}
+	15%{transform:scale(6,8)}
+	20%{transform:scale(8,10)}
+	25%{transform:scale(10,12)}
+	30%{transform:scale(12,14)}
+	35%{transform:scale(14,16)}
+	40%{transform:scale(16,18)}
+	45%{transform:scale(18,20)}
+	50%{transform:scale(20,22)}
+	100%{transform:scale(22,24)}
+	10%{transform:rotate(30deg)}
+	30%{transform:rotate(160deg)}
+	50%{transform:rotate(90deg)}
+	100%{transform:rotate(270deg)}
+
+}
+
+
+#rect-hover{
+	width: 100px;
+	height: 10px;
+	background: white;
+	opacity: .5;
+	position: : relative;
+	/*transition-timing-function: linear;*/
+	animation-name: rect-animation;
+	margin-bottom: 100px;
+	animation-duration: 20s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+	display:block;
+}
+
+/*
+}
+#rect-hover:hover{
+	width:500px;
+}
+*/
+
+@keyframes rect-animation-right{
+	0%{transform:scale(1,2)}
+	5%{transform:scale(2,4)}
+	10%{transform:scale(4,6)}
+	15%{transform:scale(6,8)}
+	20%{transform:scale(8,10)}
+	25%{transform:scale(10,12)}
+	30%{transform:scale(12,14)}
+	35%{transform:scale(14,16)}
+	40%{transform:scale(16,18)}
+	45%{transform:scale(18,20)}
+	50%{transform:scale(20,22)}
+	100%{transform:scale(22,24)}
+	10%{transform:rotate(30deg)}
+	30%{transform:rotate(160deg)}
+	50%{transform:rotate(90deg)}
+	100%{transform:rotate(270deg)}
+
+}
+
+
+#rect-hover-right{
+	width: 100px;
+	height: 10px;
+	background: white;
+	opacity: .5;
+	/*transition-timing-function: linear;*/
+	animation-name: rect-animation-right;
+	margin-bottom: 100px;
+	animation-duration: 20s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+	display:block;
+	float:right;
+}
